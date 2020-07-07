@@ -1,12 +1,14 @@
 package PhoneBillExcercise;
 
-public class PhoneCalls implements BillAction {
+public class PhoneCall implements BillAction {
     private double callPrice;
-    public PhoneCalls(Double callPrice){
+    public PhoneCall(double callPrice){
     this.callPrice=callPrice;
     }
     @Override
     public double totalCost() {
         return callPrice;
     }
+
+
 }
