@@ -8,13 +8,13 @@ public class DataBundles implements  BillAction {
     }
     public void setMegabytesPrice(double megabytesPrice){
         if(megabytes<=500 && megabytes >0) {
-            megabytesPrice =0.75;
+            this.megabytesPrice =0.75;
         }else if (megabytes>=500 && megabytes <= 1000 ){
-            megabytesPrice = (megabytes * 0.55) ;
+            this.megabytesPrice = megabytes * 0.55 ;
         }else if (megabytes > 1000 ){
-            megabytesPrice =(megabytes * 0.35);
+            this.megabytesPrice =megabytes * 0.35;
         }else {
-            megabytesPrice = 0.0;
+            this.megabytesPrice = 0.0;
         }
     }
 

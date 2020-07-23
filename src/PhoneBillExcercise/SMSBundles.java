@@ -1,9 +1,10 @@
 package PhoneBillExcercise;
 
 public class SMSBundles implements  BillAction {
-    private double smsPrice;
-    private int qty;
-    public SMSBundles(double smsPrice,int qty){
+    private final double smsPrice;
+    private final int qty;
+
+    public SMSBundles(final double smsPrice, final int qty) {
         this.smsPrice=smsPrice;
         this.qty= qty;
     }
